@@ -287,13 +287,6 @@ closeBtns.forEach(function(btn){
   });
 })
 
-document.addEventListener('click', (e) => {
-    let clickInside = modal.contains(e.target)
-
-    if (!clickInside) {
-        modal.classList.remove('show')
-    }
-})
 // controlling scroll navigation
 const home = document.getElementById('home-a');
   home.addEventListener('click',()=>{
