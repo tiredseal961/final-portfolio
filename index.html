@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="./static/assets/jb.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Johnny Boustany</title>
+    <link rel="preload" href="fonts.css" as="style">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+  </head>
+  <body id="appBody">
+    <canvas id="bg"></canvas>
+    <main>
+
+      <header id="home">
+        <div style="font-family: 'Metropolis-Regular'; padding-bottom:0.6944444444444444vw; font-size:  3.5vw" > <span style=" padding-bottom:8px">Lorem Ipsum </span> <br>
+          <div style="font-size: 1.8vw; padding-top: 0.6944444444444444vw; padding-bottom: 0.3472222222222222vw;font-family: 'Metropolis-Thin'">  welcome to my portfolio. feel free to scroll!</div>
+        </div>
+        <div id='navbar'>
+          <a class='nav-item' id="home-a" href="#"><span id="home-span">home.</span></a>
+          <a class='nav-item' id="aboutme-a" href="#about-me"> <span id="about-me-span" >about me.</span></a>
+          <a class='nav-item' id="projects-a" href="#projects"><span id="projects-span">projects.</span></a>
+        </div>
+      </header>
+
+        <section id="about-me">
+          <div style="padding-bottom: 1.3888888888888888vw; margin-left:  0.6944444444444444vw; margin-right:  0.6944444444444444vw;">
+            <h2 style="font-family: 'Metropolis-Regular'">about me. 🐋 </h2>
+            <p>
+              My name is Lorem and I'm a graduate student interested in full-stack software engineering, UX/UI design and computer graphics.
+            </p>
+            <p>
+              Outside of CS, I love surfing, watching sunsets from my surfboard and spending time at the beach with my dogs.
+            </p>
+          </div>
+        </section>
+
+      <section class="left" id="projects">
+
+        <div style="text-align: center; padding-bottom: 20px; margin-left:  0.6944444444444444vw; margin-right:  0.6944444444444444vw;">
+          <h2 style="text-align: left; font-family: 'Metropolis-Regular'">projects. </h2>
+
+          <div class="buttons">
+
+
+            <div class="column" style="flex-grow: 1; align-items: center ">
+
+              <div class="row" style="flex-grow: 0.1 ">
+
+            <span style="padding: 15px">
+
+                <button class="open" id="button1" style="flex-grow: 1; padding: 30px"  data-modal="modal1">
+                <span class="hide" style="font-family: Metropolis-Light; font-size: 1.5vw"> Typeically <br> <br><div style="font-size:  5vw">🎵</div></span>
+                </button>
+
+            </span>
+
+                <span style="padding: 15px">
+                <button class="open" id="button2"  style="flex-grow: 1; padding: 30px"  data-modal="modal2">
+                <span class="hide" style="font-family: Metropolis-Light;font-size:  1.5vw">Responsive <br> Redesign <br> <br><div style="font-size:  5vw">🦞</div>
+                </span>
+                </button>
+
+            </span>
+
+
+              </div>
+
+              <div class="row" style="flex-grow: 1; ">
+
+            <span style="padding: 15px">
+                <button class="open" id="button3" style="flex-grow: 1; padding: 30px" data-modal="modal3">
+               <span style="font-family: Metropolis-Light;font-size:  1.5vw" class="hide">
+              Development <br> App <br> <br> <div style="font-size:  5vw">🍰</div>
+               </span>
+
+                </button>
+            </span>
+
+                <span style="padding: 15px">
+
+                <button class="open" id="button4"  style="flex-grow: 1; padding: 30px"  data-modal="modal4">
+                  <span style="font-family: Metropolis-Light;font-size:  1.5vw" class="hide">
+
+                  Iterative Design <br> <br> <div style="font-size:  5vw">🧬 </div>
+                    </span>
+
+                </button>
+
+            </span>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class='modal-container' id='modal1'>
+          <div class="modal">
+
+            <div style="width: 100%; height: 36vw; background-image: url('./static/assets/typeically.png'); background-size: cover; position: relative;">
+              <span class="close" data-modal="modal1" style="color: white; position: absolute; right: 0vw; top: 0vw; width: 3.125vw; height: 3.125vw; cursor:pointer; font-size:3vw;">&times;</span>
+            </div>
+
+            <div style="max-width: 100%; padding: 0 40px">
+              <p style="font-size: 2vw; font-family: 'Metropolis-SemiBold'; text-align: center; margin-bottom: 0.6944444444444444vw">Typeically <a href='https://github.com/johnnyboustany/Typeically'><img style="height:2vw; width: auto;"  class='footer-icon' src='./static/assets/github.svg'/></a>
+              </p>
+
+              <p style="font-size: 1.7vw; font-family: 'Metropolis-Regular'; text-align: center; margin-top: 0; margin-bottom: 0.6944444444444444vw">Spring 2022 • <span style="font-size: 1.7vw; font-family: 'Metropolis-LightItalic'"> Stack: Java, JavaScript, React, SQL</span> </p>
+              <p style="font-size: 1.3vw; font-family: 'Metropolis-Thin'; text-align: center; margin-right: 30px; margin-left: 30px; margin-top: 0; color: grey; line-height: 1.2">Typeically is a web-based typing app that allows you to find your favorite songs and type along to the lyrics! I created & developed this app alongside four classmates for my Spring 2022 Software Engineering course.
+                <br>
+
+              </p>
+              <div style="margin-top: 0; margin-right: 8vw; margin-left: 8vw;">
+                <p style="font-size: 1.4vw; font-family: 'Metropolis-SemiBold'; padding-bottom: 1vw; line-height: 1.5; margin-bottom: 0">Context/Problem</p>
+                <p style="font-size: 1.3vw; font-family: 'Metropolis-Regular'; text-align: left; margin-top: 0; margin-bottom: 0; color: black; line-height: 1.2"> This project aims to provide entertainment in the form of a typing game that allows you to type along to user selected lyrics. There is currently no application that allows users to type along to lyrics of a song that they inputted, and so our project aims to fulfill the want for such an application.
+                </p>
+
+                <p style="font-size: 1.4vw; font-family: 'Metropolis-SemiBold'; padding-bottom: 1vw; line-height: 1.5; margin-bottom: 0">User Research</p>
+                <p style="font-size: 1.3vw; font-family: 'Metropolis-Regular'; text-align: left; margin-top: 0; margin-bottom: 0; color: black; line-height: 1.2">The intended users of this project know how to type and probably enjoy doing typing games/tests, as well as enjoy music. Avid typists who also enjoy music would enjoy a typing application that allows them to search and type along to their favorite songs. This app is for personal and recreational use, and the amount of time it is used depends on the user’s commitment and amount of free time.
+                </p>
+
+                <p style="font-size: 1.4vw; font-family: 'Metropolis-SemiBold'; padding-bottom: 1vw; line-height: 1.5; margin-bottom: 0">Demos</p>
+                <p style="font-size: 1.3vw; font-family: 'Metropolis-Regular'; text-align: left; margin-top: 0; margin-bottom: 0; color: black; line-height: 1.2">The following demos below showcase the app’s main features.
+                </p>
+
+                <p style="font-size: 1.3vw; font-family: 'Metropolis-SemiBold';text-align: left; color: grey; line-height: 1.5; margin-bottom: 0">Demo 1:</p>
+
+                <p style="font-size: 1.3vw; font-family: 'Metropolis-Regular'; padding-bottom: 1vw;  text-align: left; color: black; line-height: 1.2">You can use the search bar to find a song by artist, song name, or lyric content, and hit 'enter' to generate song options. Once you've found the result for the song you wish to type to, click on it and you'll be directed to the typing page. Upon finishing the song, you will receive your typing stats, including words per minute, accuracy and typing duration. You will have the option to submit your score to that song's specific leaderboard! You've got to be quick—only the top 5 completion times are displayed on the leaderboard!</p>
+
+                <div style="flex: 1;text-align: center"><img style=" width: 40%; border-radius: 1.0416666666666667vw" src='./static/assets/type-demo.gif'/>
+                  <p style="text-align: center; margin-top: 5px; color: grey; font-size: 0.97222vw">above: A user searches for a song and types to it, and their typing statistics and place in the leaderboard appear at the end. </p>
+                </div>
+
+                <p style="font-size: 1.2vw; font-family: 'Metropolis-SemiBold'; text-align: left; color: grey; line-height: 1.5; margin-bottom: 0">Demo 2:</p>
+
+                <p style="font-size: 1.2vw; font-family: 'Metropolis-Regular'; padding-bottom: 1vw; text-align: left; color: black; line-height: 1.2">You can also choose a song from the list of new releases. In addition, you can toggle the song length and censorship of explicit lyrics using the switches at the top-right of the screen. Return back to the song search page by clicking the Typeically header at the top left of the page.</p>
+
+                <div style="flex: 1;text-align: center"><img style="width: 40% ; border-radius: 1.0416666666666667vw" src='./static/assets/type-demo2.gif'/>
+                  <p style="text-align: center; margin-top: 5px; color: grey; font-size: 0.97222vw"> above: A user toggles the shorten and censor options in the top-right corner and chooses a newly released song. </p>
+                </div>
+
+                <p style="font-size: 1.4vw; font-family: 'Metropolis-SemiBold'; line-height: 1.5; margin-bottom: 0">Design Iterations </p>
+
+                <p style="font-size: 1.3vw; font-family: 'Metropolis-Regular'; text-align: left;  color: black; line-height: 1.2">The backend was developed using Java and fulfilled two main purposes: (1) retrieving the Spotify API data to load a list of newly released songs on the frontend and (2) storing the submissions to the leaderboard in an SQL file. I developed API Handlers to update the frontend with both forms of data.</p>
+                <p style="font-size: 1.3vw; font-family: 'Metropolis-Regular';  text-align: left; color: black; line-height: 1.2">A new table in the SQL database file is created for each song and is continuously updated with the user’s submissions. Only the 5 top submissions are displayed on the Frontend. The frontend communicates with the backend so that the tables in the database are up to date. On the frontend side of the app, the search bar feature was implemented using the Genius API, which provided us with search query results, song lyrics and song artwork.</p>
+                <p style="font-size: 1.3vw; font-family: 'Metropolis-Regular';  text-align: left; color: black; line-height: 1.2">There are some trade-offs with the design choices made: if the APIs break, then the application will no longer functional. However, it is not feasible to hold all this information in the backend. In addition, song information needs to be continuously updated with new data.  </p>
+                <p style="font-size: 1.5vw; font-family: 'Metropolis-SemiBold'; text-align: left; color: black; line-height: 1.5; margin-bottom: 0">Testing</p>
+                <p style="font-size: 1.3vw; font-family: 'Metropolis-Regular'; padding-bottom: 1vw; text-align: left; color: black; line-height: 1.2">The backend was tested with JUnit tests that targeted the API Handlers. The frontend was tested using Selenium to verify that all features of the app work in conjunction.</p>
+
+                <p style="font-size: 1.5vw; font-family: 'Metropolis-SemiBold'; text-align: left; color: black; line-height: 1.5; margin-bottom: 0">Conclusion</p>
+                <p style="font-size: 1.3vw; font-family: 'Metropolis-Regular'; padding-bottom: 1vw; text-align: left; color: black; line-height: 1.2"> I learned a lot about the software engineering cycle in general and realized how much I enjoyed working with both frontend and backend concurrently. </p>
+
+
+              </div>
+
+            </div>
+            <div style="max-width: 100%; padding: 0 150px;">
+              <p style="font-size: 1.9vw; font-family: 'Metropolis-Regular';line-height: 1.2; text-align: center">🐟&nbsp;&nbsp;&nbsp;&nbsp;🐋&nbsp;&nbsp;&nbsp;&nbsp;🦈</p>
+            </div>
+          </div>
+        </div>
+
+        <div class='modal-container' id='modal2'>
+            <div style="width: 100%; height: 36vw; background-image: url('./static/assets/redesign.png'); background-size: cover;  position: relative;">
+              <span class="close" data-modal="modal2" style="color: white; position: absolute; right: 0vw; top: 0vw; width: 3.125vw; height: 3.125vw; cursor:pointer; font-size:3vw;">&times;</span>
+            </div>
+
+            <div style="max-width: 100%; padding: 0 40px">
+              <p style="font-size: 2vw; font-family: 'Metropolis-SemiBold'; text-align: center; margin-bottom: 0.6944444444444444vw">Responsive Redesign <a href='https://tiredseal961.github.io/redesigned-website/'><img style="height:1.5vw; width: auto;" class='footer-icon' src='./static/assets/linkicon.svg'/></a> </p>
+              <p style="font-size: 1.7vw; font-family: 'Metropolis-Regular'; text-align: center; margin-top: 0; margin-bottom:  0.6944444444444444vw">Fall 2022 • <span style="font-size: 1.7vw; font-family: 'Metropolis-LightItalic'"> Stack: Javascript (Figma)</span></p>
+              <p style="font-size: 1.3vw; font-family: 'Metropolis-Thin'; text-align: center; margin-right: 30px; margin-left: 30px; margin-top: 0; color: grey; line-height: 1.2">I redesigned the <a href="https://www.mainehistory.org/">website for the Maine Historical Society</a> in order to present a cleaner, more concise and accessible alternative.</p>
+            </div>
+
+          <div style="margin-top: 0; margin-right: 12vw; margin-left: 12vw;">
+
+            <p style="font-size: 1.4vw; font-family: 'Metropolis-SemiBold'; padding-bottom: 1vw; line-height: 1.5; margin-bottom: 0">Context/Problem</p>
+            <p style="font-size: 1.3vw; font-family: 'Metropolis-Regular'; text-align: left; margin-top: 0; margin-bottom: 0; color: black; line-height: 1.2"> I chose to redesign the Maine Historical Society’s website as I have always been frustrated with many aspects of the front webpage. I have friends from Maine and have always been interested in learning more about the state's history. However, the website’s design makes it difficult to access important resources needed to learn more about Maine’s history and the MHS. I am eager to propose a sleek, simple, and improved redesign.</p>
+
+            <p style="font-size: 1.4vw; font-family: 'Metropolis-SemiBold'; padding-bottom: 1vw; line-height: 1.5; margin-bottom: 0">User Research</p>
+            <p style="font-size: 1.3vw; font-family: 'Metropolis-Regular'; text-align: left; margin-top: 0; color: black; line-height: 1.2"> Before creating low and high fidelity models and redesigning the website, I identified the main user problems that can arise when using it. I chose these user problems based on my major frustrations with the website as a frequent user of it. I also used WebAIM WAVE to identify any accessibility problems. The figures below present the main user and accessibility problems.</p>
+            <br>
+
+            <br>
+            <div style=" text-align: center">
+
+                  <img style=" width: 70%" src='./static/assets/user-problems.png'/>
+                  <p style="text-align: center; margin-top: 5px; color: grey; font-size: 0.97222vw"> above: Showing the user problems. </p>
+
+                 <img style="width: 70%" src='./static/assets/accessibility.png'/>
+                  <p style="text-align: center; margin-top: 5px; color: grey; font-size: 0.97222vw"> above: Showing the accessibility issues. </p>
+
+              <br>
+
+
+            </div>
+
+            <p style="font-size: 1.4vw; font-family: 'Metropolis-SemiBold';text-align: left; color: black; line-height: 1.5; margin-bottom: 0">Design Iterations</p>
+            <p style="font-size: 1.3vw; font-family: 'Metropolis-Regular'; padding-bottom: 1vw;  text-align: left; color: black; line-height: 1.2">To start planning for making the website responsive, I created low fidelity designs for three screens (laptop, mobile & tablet) using Balsamiq. The low-fi sketches for mobile are shown below.</p>
+
+            <div style="flex: 1; text-align: center">
+                <span>
+                  <img style="width: 90%; border-radius: 1.0416666666666667vw; padding-right: 100px;" src='./static/assets/lowfidelitylap.png'/>
+                  <p style="text-align: center; margin-top: 5px; color: grey; font-size: 0.97222vw">above: Showing the low-fi sketch for laptops. </p>
+                </span>
+            </div>
+
+            <p style="font-size: 1.3vw; font-family: 'Metropolis-Regular'; padding-bottom: 1vw;  text-align: left; color: black; line-height: 1.2">I decided to reduce the number of links and information displayed on the front-page. The trade-off has to do with the risk of possibly removing important information. However, I believe this change is for the best as the large number of links makes it difficult to find resources on the website. By reducing the repetition of links and opting for a simpler design, I make it easier for users to find what they are looking for. The low-fi sketch for laptops is shown below along with annotations explaining the choices I made.</p>
+
+            <p style="font-size: 1.3vw; font-family: 'Metropolis-Regular'; padding-bottom: 1vw;  text-align: left; color: black; line-height: 1.2">Based on the low-fi designs, I created the high-fidelity prototypes on Figma, one for each device type. The original website was redesigned using these figma prototypes. Here is the <a href="https://tiredseal961.github.io/redesigned-website/">link</a> to the redesigned website.</p>
+
+            <br>
+
+            <iframe class="pdf" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FVLsl3MZ8dwZNHSUZgKJ77E%2FRedesign%3Fkind%3D%26node-id%3D205%253A380%26page-id%3D205%253A274%26scaling%3Dcontain" allowfullscreen></iframe>
+
+
+            <p style="font-size: 1.4vw; font-family: 'Metropolis-SemiBold';text-align: left; color: black; line-height: 1.5; margin-bottom: 0">Conclusion</p>
+
+            <p style="font-size: 1.3vw; font-family: 'Metropolis-Regular'; padding-bottom: 1vw;  text-align: left; color: black; line-height: 1.2">This project made me appreciate Balsamiq and Figma a lot more as I realized that both tools make it much easier to make nicely designed websites. I did not have to worry about design choices when I was coding as I had my Figma designs as reference. Hence, I was able to focus on using “flex” to make my design responsive. I learned how to make a website responsive as I code it part by part.
+            </p>
+
+          </div>
+
+            <div style="max-width: 100%; padding: 0 150px;">
+              <p style="font-size: 1.7vw; font-family: 'Metropolis-Regular';line-height: 1.2; text-align: center">🐟&nbsp;&nbsp;&nbsp;&nbsp;🐋&nbsp;&nbsp;&nbsp;&nbsp;🦈</p>
+            </div>
+        </div>
+
+        <div class='modal-container' id='modal3' >
+          <div style="width: 100%; height: 36vw; background-image: url('./static/assets/development.png'); background-size: cover; position: relative;">
+            <span class="close" data-modal="modal3" style="color: black; position: absolute; right: 0vw; top: 0vw; width: 3.125vw; height: 3.125vw; cursor:pointer; font-size:3vw;">&times;</span>
+          </div>
+
+          <div style="max-width: 100%; padding: 0 40px">
+            <p style="font-size: 2vw; font-family: 'Metropolis-SemiBold'; text-align: center; margin-bottom: 0.6944444444444444vw">Development App <a href='https://tiredseal961.github.io/development/'><img style="height:1.5vw; width: auto;" class='footer-icon' src='./static/assets/linkicon.svg'/></a> </p>
+            <p style="font-size: 1.7vw; font-family: 'Metropolis-Regular'; text-align: center; margin-top: 0; margin-bottom:  0.6944444444444444vw">Fall 2022 • <span style="font-size: 1.7vw; font-family: 'Metropolis-LightItalic'"> Stack: JavaScript, React </span></p>
+            <p style="font-size: 1.3vw; font-family: 'Metropolis-Thin'; text-align: center; margin-right: 30px; margin-left: 30px; margin-top: 0; color: grey; line-height: 1.2">I developed an interactive interface for a Baklava Shop using JavaScript (React) to allows users to select sweets sold in the shop and add them to their cart.</p>
+          </div>
+
+          <div style="margin-top: 0; margin-right: 10vw; margin-left: 10vw;">
+            <p style="font-size: 1.4vw; font-family: 'Metropolis-SemiBold'; line-height: 1.5; margin-bottom: 0">Context/Problem</p>
+            <p style="font-size: 1.3vw; font-family: 'Metropolis-Regular';  text-align: left; color: black; line-height: 1.2">Aleppo’s Sweets, an authentic Syrian Bakery and Café based in Providence, RI, has 12+ delicious baklava items. The sheer number of options can be intimidating to customers who have not tried baklava before. To make it easier for customers to choose baklava items off the menu, I developed an interactive interface that allows users to filter the options based on relevant categories and sort them based on price.
+            </p>
+
+            <p style="font-size: 1.4vw; font-family: 'Metropolis-SemiBold'; line-height: 1.5; margin-bottom: 0">Research</p>
+            <p style="font-size: 1.3vw; font-family: 'Metropolis-Regular';  text-align: left; color: black; line-height: 1.2">Aleppo’s Sweets’
+              <a href="https://www.alepposweets.com/">website</a> does not allow users to filter or sort their baklava items. As an avid baklava lover, I know exactly which baklava I prefer. However, many of my friends have never tried it before and struggle to choose one when asked to. They would appreciate a more sophisticated interface that would allow them to promptly choose one of the many items on the menu. </p>
+            <p style="font-size: 1.3vw; font-family: 'Metropolis-Regular';  text-align: left; color: black; line-height: 1.2">When taking a close look at the menu, I realized that the biggest factor that differentiated the items from each other was the main ingredient used. For example, customers who love pistachio will prefer to only look at the options with pistachio. I also noticed that two of the items off the menu are Vegan and that vegan customers would appreciate it if they could sort the menu to only see these options.   </p>
+
+            <div style="flex: 1; text-align: center"><img style="width: 40%;" src='./static/assets/baklava.png'/>
+              <p style="text-align: center; margin-top: 5px; color: grey; font-size: 0.97222vw"> above: shows an example of the baklava menu on Aleppo’s Sweets’ website, in which there is no option to filter or sort items. </p>
+            </div>
+            <br>
+
+            <p style="font-size: 1.4vw; font-family: 'Metropolis-SemiBold'; line-height: 1.5; margin-bottom: 0">Design Iterations</p>
+            <p style="font-size: 1.3vw; font-family: 'Metropolis-Regular';  text-align: left; color: black; line-height: 1.2">I initiated the design process by making the list of 12 items. On the first iteration, I had a separate page for my cart. However, I decided to place the cart on the page as the list of items as it would allow users to scroll through the list while also looking at their cart. Although this design choice makes the page a bit more cluttered, I think the trade-off is worth it as the main goal of designing this interface is to make the user experience easier. </p>
+
+            <p style="font-size: 1.4vw; font-family: 'Metropolis-SemiBold'; line-height: 1.5; margin-bottom: 0">Conclusion</p>
+            <p style="font-size: 1.3vw; font-family: 'Metropolis-Regular';  text-align: left; color: black; line-height: 1.2">I was satisfied with the result in the end as it makes it easier for customers to choose items off the menu. I believe that Aleppo Sweets would benefit from implanting a similar interface on their website. I learned a lot about how to use interface components in React and tie them to an internal data state and feel more comfortable with React after this project.</p>
+
+
+
+          </div>
+
+          <div style="max-width: 100%; padding: 0 150px;">
+            <p style="font-size:1.9vw; font-family: 'Metropolis-Regular';line-height: 1.2; text-align: center">🐟&nbsp;&nbsp;&nbsp;&nbsp;🐋&nbsp;&nbsp;&nbsp;&nbsp;🦈</p>
+          </div>
+        </div>
+        <div class='modal-container' id='modal4' >
+
+          <div style="width: 100%; height: 36vw; background-image: url('./static/assets/iterativedesign.png'); background-size: cover; position: relative;">
+            <span class="close" data-modal="modal4" style="color: black; position: absolute; right: 0vw; top: 0vw; width: 3.125vw; height: 3.125vw; cursor:pointer; font-size:3vw;">&times;</span>
+          </div>
+
+          <div style="max-width: 100%; padding: 0 40px">
+            <p style="font-size: 2vw; font-family: 'Metropolis-SemiBold'; text-align: center; margin-bottom: 10px">Iterative Design </p>
+            <p style="font-size: 1.7vw; font-family: 'Metropolis-Regular'; text-align: center; margin-top: 0; margin-bottom: 10px">Fall 2022 • <span style="font-size: 1.7vw; font-family: 'Metropolis-LightItalic'"> Stack: Figma </span></p>
+            <p style="font-size: 1.3vw; font-family: 'Metropolis-Thin'; text-align: center; margin-right: 30px; margin-left: 30px; margin-top: 0; color: grey; line-height: 1.2">Alongside four classmates, I designed a webpage for a startup called "Nest Genomics," which aims to develop software for users to make personalized medical treatment plans based on their genetic testing results. We sketched multiple ideas on paper, then used Balsamiq to create a Lo-Fi mockup. Finally, we implemented our design on Figma, and received user feedback on its practicality. </p>
+
+            <div style="margin-top: 0; margin-right:  6.944444444444445vw; margin-left: 8.333333333333334vw;">
+              <p style="font-size: 1.4vw; font-family: 'Metropolis-SemiBold'; line-height: 1.5; margin-bottom: 0">Context on Nest Genomics</p>
+
+              <p style="font-size: 1.3vw; font-family: 'Metropolis-Regular'; text-align: left; color: black; line-height: 1.2"> The <a style="color: black" target="blank" href="https://www.nestgenomics.com">Nest Genomics</a> software will recommend imaging, specialists, and medications based on the user’s results. For example, if it detects that a user is at risk for breast cancer, it will then come up with a personalized plan specifically for the illness, including treatment. Before we started iterating on our designs, we made sure that we fully comprehended Nest Genomics’ purpose and goals, given how sensitive the information that the software works with is.
+              </p>
+
+              <p style="font-size: 1.4vw; font-family: 'Metropolis-SemiBold'; line-height: 1.5; margin-bottom: 0">Initial Design</p>
+
+              <p style="font-size: 1.3vw; font-family: 'Metropolis-Regular'; text-align: left;  color: black; line-height: 1.2"> We started our design process by sketching in order to explore different design alternatives. Once we agreed unanimously on concrete design ideas, we implemented the Low-Fi prototype on Balsamiq. We decided on the backbone of the website, which consisted of the Sign-In/Login-In, Generate Plan and View Plan pages. We then implemented the first draft of our Hi-Fi prototype, closely following the foundation we set in the Low-Fi Prototype.</p>
+
+              <div style="flex: 1; text-align: center"><img style="width: 60%;" src='./static/assets/low-fi.png'/>
+                <p style="text-align: center; margin-top: 5px; color: grey; font-size: 0.97222vw"> above: low-fi prototype (Balsamiq). </p>
+              </div>
+              <p style="font-size: 1.5vw; font-family: 'Metropolis-SemiBold'; text-align: left; color: black; line-height: 1.5; margin-bottom: 0">Research/Feedback</p>
+              <p style="font-size: 1.3vw; font-family: 'Metropolis-Regular'; padding-bottom: 1vw; text-align: left; color: black; line-height: 1.2">Before further iterating on our high fidelity model, we had the opportunity to receive feedback from fellow classmates at a Mock Crit. We jotted down this feedback and addressed the critiques in the second iteration of our design. We summarized the changes we made based on the feedback below.</p>
+
+              <div style="flex: 1; text-align: center"><img style="width: 50%;" src='./static/assets/mockup-crit.png'/>
+                <p style="text-align: center; margin-top: 0px; color: grey; font-size: 0.97222vw"> above: feedback and improvements implemented in response.</p>
+              </div>
+
+
+              <p style="font-size: 1.5vw; font-family: 'Metropolis-SemiBold'; text-align: left; color: black; line-height: 1.5; margin-bottom: 0">Design Iterations</p>
+              <p style="font-size: 1.3vw; font-family: 'Metropolis-Regular'; padding-bottom: 1vw; text-align: left; color: black; line-height: 1.2">Although we expanded the complexity of our page by adding new pages (for Settings and Account), our prototype is now more complete and full proof. In addition, our pages do not look as simple as before as we had to cover potentially sensitive information and add extra information such as hotlines. However, these changes are worth it as they will allow the software to be more cognizant of its users’ mental health and needs. We believe that supporting the users’ needs should be prioritized over making the design as simple and “clean” as possible.</p>
+              <p style="font-size: 1.3vw; font-family: 'Metropolis-Regular'; padding-bottom: 1vw; text-align: left; color: black; line-height: 1.2">We submitted our prototype for user testing and received even more feedback, which was mostly positive. The general sentiment was that the prototype is simple enough and is very easy to navigate. This finding made us more confident about our design decisions.</p>
+
+
+              <iframe class="pdf" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FriR3fH87iBOXCVn2OFDNmC%2FUI-It-Design-Prototype%3Fnode-id%3D15%253A2%26scaling%3Dcontain%26page-id%3D0%253A1%26starting-point-node-id%3D15%253A2" allowfullscreen></iframe>
+              <p style="text-align: center; margin-top: 0px; color: grey; font-size: 0.97222vw"> above: our final hi-fi prototype (Figma).</p>
+
+              <p style="font-size: 1.5vw; font-family: 'Metropolis-SemiBold'; text-align: left; color: black; line-height: 1.5; margin-bottom: 0">Conclusion</p>
+              <p style="font-size: 1.3vw; font-family: 'Metropolis-Regular'; padding-bottom: 1vw; text-align: left; color: black; line-height: 1.2">This project allowed me to gain a stronger grasp of the iterative design process. My biggest takeaway is that there is no fixed roadmap for the iterative design process and that it needs to be tailored to the problem at hand that needs to be solved. Our software deals with very sensitive information and we had to be very conscious of our user needs at every step of the design process.</p>
+
+
+            </div>
+          </div>
+          <div style="max-width: 100%; padding: 0 150px;">
+            <p style="font-size: 1.9vw; font-family: 'Metropolis-Regular';line-height: 1.2; text-align: center">🐟&nbsp;&nbsp;&nbsp;&nbsp;🐋&nbsp;&nbsp;&nbsp;&nbsp;🦈</p>
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+      <div class="center" id="contact" style="background: rgba(255, 255, 255, 0.93)">
+        <footer>
+          <div style="text-align: center; padding-top:  0.6944444444444444vw;">
+            <a href='https://www.linkedin.com'><img style="width: auto; height: 2vw" class='footer-icon' src='./static/assets/linkedin.svg'/></a>
+
+            <div class="tooltip">
+              <a href='#0' id="email"><img style="width: auto; height: 2vw" class='footer-icon' src='./static/assets/mail.svg'/>
+                <span class="tooltiptext" id="myTooltip">copy to clipboard.</span>
+              </a>
+            </div>
+
+            <a href='https://github.com'><img style="width: auto; height: 2vw" class='footer-icon' src='./static/assets/github.svg'/></a>
+          </div>
+          <p style="font-size: 0.9722222222222222vw; color: black; text-align: center">&copy; 2022 designed and built by Lorem Ipsum</p>
+        </footer>
+      </div>
+
+    </main>
+
+    <!-- hitwebcounter Code START -->
+    <a href="https://www.hitwebcounter.com" target="_blank" class = "hitcounter">
+      <img src="https://hitwebcounter.com/counter/counter.php?page=8049230&style=0007&nbdigits=5&type=page&initCount=0" title="Free Counter" Alt="web counter"   border="0" /></a>
+    <style>
+      .hitcounter{
+        text-align: center;
+        opacity: .30;
+        position: fixed;
+        bottom: 0;
+      }
+    </style>
+
+    <script type="module" src="./main.js"></script>
+
+  </body>
+
+</html>

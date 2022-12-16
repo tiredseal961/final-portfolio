@@ -1,0 +1,20 @@
+{
+  "homepage": "https://johnnyboustany.github.io/johnny-b-portfolio/",
+  "name": "three-demo",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "@types/dat.gui": "^0.7.7",
+    "dat.gui": "^0.7.9",
+    "vite": "^2.3.0"
+  },
+  "dependencies": {
+    "lil-gui": "^0.17.0",
+    "stats.js": "^0.17.0",
+    "three": "^0.128.0"
+  }
+}
