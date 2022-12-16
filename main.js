@@ -129,7 +129,7 @@ gltfLoader.load('./static/assets/wooden_boat/scene.gltf', (gltfScene) => {
         scene.add(gltfScene.scene);
         gltfScene.scene.position.z = -30;
         gltfScene.scene.scale.set(0.1, 0.1,0.1, 0.1)
-        gltfScene.scene.position.setX(-60);
+        gltfScene.scene.position.setX(-70);
     }
 });
 
