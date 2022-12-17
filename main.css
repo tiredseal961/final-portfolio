@@ -28,7 +28,7 @@
 
   background-image: url('./static/assets/redesign-icon.png'); background-size: cover;
   font-family: 'Metropolis-Thin';
-   background-color:rgba(255,114,118,0.5);
+   background-color:rgba(255,114,118,0.6);
 
   border-radius: 0.6944444444444444vw;
   border: white;
@@ -46,7 +46,7 @@
 
   background-image: url('./static/assets/dev-icon2.png'); background-size: cover;
   font-family: 'Metropolis-Thin';
-  background-color:rgba(135,206,235, 0.50);
+  background-color:rgba(135,206,235, 0.60);
 
   border-radius: 0.6944444444444444vw;
   border: white;
@@ -84,18 +84,18 @@
 }
 #button1:hover {
   background-image: none;
-  background-color:rgba(0,0,139,0.3);
+  background-color:rgba(0,0,139,0.2);
   border: rgba(135,206,235, 0.70);
-  transition: 0.7s;
+  transition: 1s;
 }
 #button2:hover span {
   display: block;
 }
 #button2:hover {
   background-image: none;
-  background-color:rgba(255,114,118,0.5);
+  background-color:rgba(255,114,118,0.4);
   border: rgba(135,206,235, 0.5);
-  transition: 0.7s;
+  transition: 1s;
 }
 
 #button3:hover span {
@@ -103,9 +103,9 @@
 }
 #button3:hover {
   background-image: none;
-  background-color:rgba(135,206,235, 0.70);
+  background-color:rgba(135,206,235, 0.4);
   border: rgba(135,206,235, 0.70);
-  transition: 0.7s;
+  transition: 1s;
 }
 
 #button4:hover span {
@@ -113,9 +113,9 @@
 }
 #button4:hover {
   background-image: none;
-  background-color:rgba(245,218,223, 1);
+  background-color:rgba(245,218,223, 0.8);
   border: rgba(135,206,235, 0.70);
-  transition: 0.7s;
+  transition: 1s;
 }
 
 button:active {
@@ -130,11 +130,10 @@ body {
   overflow-x: hidden;
 }
 
-html {
-  scroll-behavior: smooth;
 
-}
  html, body {
+   scroll-behavior: smooth;
+
    margin: 0;
    height: 100%;
  }
