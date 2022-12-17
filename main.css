@@ -421,7 +421,7 @@ section {
   justify-items: center;
 }
 .right {
-grid-column: span 6 / 8;
+grid-column: span 6 / 10;
 }
 .center {
   z-index: -1;
@@ -429,10 +429,10 @@ grid-column: span 6 / 8;
   border-radius: 10px;
   border: rgba(255, 255, 255, 0.93);
   box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.15);
-  grid-column: span 6 / 10;
+  grid-column: span 6 / 10
 }
 .skills {
-  grid-column: span 5 / 9;
+  grid-column: span 4 / 9;
 }
 @media screen and (max-width: 700px) {
 
@@ -441,7 +441,7 @@ grid-column: span 6 / 8;
 
   }
   .center{
-    grid-column: span 8 / 10;
+    grid-column: span 7 / 9;
   }
   .skills{
     grid-column: span 7 / 9;
