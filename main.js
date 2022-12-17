@@ -103,22 +103,22 @@ const ambientLight = new THREE.AmbientLight(0xffffff);
 scene.add(pointLight, ambientLight);
 
 
-// Johnny Cube
-const johnnyTexture = new THREE.TextureLoader().load('./static/assets/johnny.png');
+// Anon Cube
+const anonTexture = new THREE.TextureLoader().load('./static/assets/anon.png');
 
-const johnny = new THREE.Mesh(new THREE.BoxGeometry(10, 10, 10), new THREE.MeshBasicMaterial({ map: johnnyTexture }));
+const anon = new THREE.Mesh(new THREE.BoxGeometry(10, 10, 10), new THREE.MeshBasicMaterial({ map: anonTexture }));
 
-scene.add(johnny);
+scene.add(anon);
 
 if(!isMobile()){
-    johnny.position.z = -25;
-    johnny.position.x = 15;
+    anon.position.z = -25;
+    anon.position.x = 15;
 } else {
-    johnny.position.z = -60;
-    johnny.position.x = 14;
+    anon.position.z = -60;
+    anon.position.x = 14;
 }
 
-johnny.rotation.x = 20;
+anon.rotation.x = 20;
 
 // Boat
 let loadedBoat;
@@ -170,8 +170,8 @@ function moveCamera() {
     }
 
     const t = document.body.getBoundingClientRect().top;
-    johnny.rotation.y += 0.01;
-    johnny.rotation.z += 0.01;
+    anon.rotation.y += 0.01;
+    anon.rotation.z += 0.01;
 
     camera.position.z = t * -0.01;
     camera.position.x = t * -0.0002;
@@ -216,7 +216,7 @@ function animate() {
 
     const time = performance.now() * 0.001;
 
-    johnny.position.y = Math.sin( time ) + 0.8;
+    anon.position.y = Math.sin( time ) + 0.8;
 
     if( !isMobile() && loadedBoat){
         loadedBoat.scene.position.y = Math.sin( time ) - 0.5;
@@ -290,9 +290,9 @@ closeBtns.forEach(function(btn){
 // controlling scroll navigation
 const home = document.getElementById('home-a');
   home.addEventListener('click',()=>{
-  johnny.rotation.x = 20;
-  johnny.rotation.y = 0;
-  johnny.rotation.z = 0;
+  anon.rotation.x = 20;
+  anon.rotation.y = 0;
+  anon.rotation.z = 0;
   window.focus();
   window.scrollTo(0,0);
 
@@ -315,11 +315,11 @@ window.addEventListener('resize',function(){
     renderer.setSize(width, height);
 
     if(!isMobile()){
-        johnny.position.z = -25;
-        johnny.position.x = 15;
+        anon.position.z = -25;
+        anon.position.x = 15;
     } else {
-        johnny.position.z = -60;
-        johnny.position.x = 14;
+        anon.position.z = -60;
+        anon.position.x = 14;
     }
 });
 
